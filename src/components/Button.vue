@@ -1,7 +1,7 @@
 <template>
 <div>
 <button id="Button-icon" :style="{ backgroundColor: bgColor }" >
-<img id="google-Logo" src="./../assets/google-Logo.jpg" />
+<img id="google-Logo" :src="logoPath" />
 <p id="google-text" class="buttonText">{{text}}</p>
 </button>
 </div>
@@ -18,10 +18,10 @@ export default {
       type: String,
       default: 'transparent'
     },
-    // logoPath: {
-    //   type: String,
-    //   default: "./../assets/google-Logo.jpg"
-    // }
+    logoPath: {
+      type: String,
+      required: true
+    }
   }
 }
 </script>

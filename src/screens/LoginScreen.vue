@@ -13,6 +13,13 @@ export default {
     LoginSection,
     Facebook
   },
+    data () {
+    return {
+      gitLogo: require('./../assets/github-Logo.png'),
+      googleLogo: require('./../assets/google-Logo.jpg')
+
+    }
+  }
 }
 </script>
 
@@ -24,9 +31,9 @@ export default {
     </div>
 
     <div class="faiz2">
-    <Button text="Login With Google" bgColor="white" logoPath="./../assets/logo.png" textcolor="white" />
-    <Button text="Login With GitHUB" bgColor="black" />
-    <Button text="Login With Facebook" bgColor="#2a4074" />
+    <Button text="Login With Google" bgColor="white" :logoPath=googleLogo textcolor="white" />
+    <Button text="Login With GitHUB" bgColor="black" :logoPath=gitLogo textcolor="white" />
+    <Button text="Login With Facebook" bgColor="#2a4074" :logoPath=gitLogo textcolor="white" />
 
     </div>
 
@@ -40,7 +47,6 @@ export default {
 .Fahad{
     display: flex;
     flex-direction: column;
-    background-color: red;
     justify-content: "center";
      align-items: center;
 }
