@@ -1,42 +1,30 @@
 <script>
-import Logo from './Logo.vue';
-import Button from './Button.vue';
-import Github from './Github.vue';
-import Facebook from './Facebook.vue';
-import LoginSection from './LoginSection.vue';
-
 
 export default {
   name: 'Navbar',
-  components: {
-    Logo,
-    Button,
-    Github,
-    Facebook,
-    LoginSection
-  },
+ 
 }
 </script>
 
 <template>
   <div>
+
+  <div class="faizcontainerOrange" />
     <div id="Navbar">
       <img id="LogoStyle" src="./../assets/stackover flowWhite.png">
       <p id="text">FOR TEAMS</p>
     </div>
-    <Logo />
-    <Button />
-    <Github />
-    <Facebook />
-
-    <LoginSection />
-
 
   </div>
 </template>
 
 
 <style>
+
+.faizcontainerOrange{
+  background-color: orange;
+  height: 5px
+}
 #Navbar{
     background-color: black;
     display: flex;

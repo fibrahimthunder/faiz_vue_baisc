@@ -9,6 +9,11 @@ export default {
 }
 </script>
 <style>
+
+#bodystyle {
+  margin: 0px;
+  padding: 0px;
+}
 #app {
 
 }

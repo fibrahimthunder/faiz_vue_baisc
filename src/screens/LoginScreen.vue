@@ -1,4 +1,6 @@
 <script>
+
+import Navbar from './../components/Navbar.vue';
 import Logo from './../components/Logo.vue';
 import Button from './../components/Button.vue';
 import LoginSection from './../components/LoginSection.vue';
@@ -8,6 +10,7 @@ import Facebook from './../components/Facebook.vue';
 export default {
   name: 'Login',
   components: {
+    Navbar,
     Logo,
     Button,
     LoginSection,
@@ -25,6 +28,10 @@ export default {
 
 <template>
   <div class="Fahad">
+
+  <div class="fahadContainer">
+  <Navbar />
+  </div>
 
   <div class="faiz">
     <Logo />
@@ -44,6 +51,10 @@ export default {
 
 
 <style>
+
+.fahadContainer{
+  width: 100%
+}
 .Fahad{
     display: flex;
     flex-direction: column;
