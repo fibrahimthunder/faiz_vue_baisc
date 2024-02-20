@@ -20,7 +20,7 @@ export default {
   padding-bottom: 7px;
   padding-left: 70px;
   padding-right: 70px;
-  border-radius: 6px;
+  border-radius: 10px;
   background-color: black;
 }
 #Github-text{

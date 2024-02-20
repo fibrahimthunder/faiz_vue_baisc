@@ -2,7 +2,7 @@
 <div>
 <button id="Facebook-icon">
 <img id="Facebook-Logo" src="./../assets/facebook-logo.jpg">
-<span id="Facebook-text" class="buttonText">Log in with Google</span>
+<p id="Facebook-text" class="buttonText">Log in with Google</p>
 </button>
 </div>
 </template>

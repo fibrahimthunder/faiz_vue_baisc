@@ -1,7 +1,7 @@
 <template>
  <div class="Logocontainer">
   <img class="Logo" src="./../assets/stackoverflow_icon.png">
-  <h1>For Teams</h1>
+  <p id="Text-ForTeams">For Teams</p>
  </div>
 </template>
 <script>
@@ -14,11 +14,18 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 10px;
+  padding: 90px;
 }
 .Logo{
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   margin-top: 1%;
+  padding: 10px;
+}
+#Text-ForTeams{
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 22px;
+  height: 100px;
 }
 </style>

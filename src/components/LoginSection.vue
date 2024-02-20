@@ -1,17 +1,11 @@
 <template>
-
 <div>
 <div class="container">
 <label class="text-email" for="uname">Email</label>
     <br>
     <input class="email" type="text" name="uname" required>
-    <br>
-    <br>
-    <label class="text-password" type="psw">Password</label>
-    <br>
+    <label class="text-password" type="psw">Password</label>     <br>
     <input class="Password" type="password" name="psw" required>
-    <br>
-    <br>
     <button class="login-button" type="submit">Login</button>
     <label>
     </label>
@@ -25,47 +19,49 @@ export default {
 </script>
 <style>
 .container{
-    
-        display: flex;
+    display: flex;
     flex-direction: column;
     border-radius: 8px;
-    width: 278px;
-    
+    width: 238px;
     background-color: black;
     justify-content: center;
-    padding: 20px;
+    padding: 14px;
+    height: 203px;
 }
 .text-email{
     color: white;
-    margin-left: 20px;
-    margin-left: 20px;
+    margin-left: 18px;
+    height: 2px;
+}
+.email{
+    border-radius: 8px;
+    margin-left: 14px;
+    width: 206px;
+    height: 23px;
+    padding: 3px;
+    margin-bottom: 18px;
+    border-color: none;
 }
 .text-password{
     color: white;
-    margin-left: 20px;
-    margin-left: 20px;
-}
-.email{
-    border-radius: 6px;
-    margin-left: 20px;
-    margin-left: 20px;
-    width: 210px;
-    height: 23px
+    margin-left: 18px;
+    height: 2px;
 }
 .Password{
-    border-radius: 6px;
-    margin-left: 20px;
-    margin-left: 20px;
-    width: 210px;
-    height: 24px;
+    border-radius: 8px;
+    margin-left: 14px;
+    width: 206px;
+    height: 23px;
+    padding: 3px;
 }
 .login-button{
-    width: 220px;
+    width: 214px;
     border-radius: 6px;
-    padding: 7px;
+    padding: 8px;
     background-color: blue;
     color: white;
-    margin-left: 30px;
-    margin-top: 29px;
+    margin-left: 16px;
+    margin-top: 18px;
+    border-color: none;
 }
 </style>

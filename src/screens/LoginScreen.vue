@@ -1,10 +1,10 @@
 <script>
-
 import Navbar from './../components/Navbar.vue';
 import Logo from './../components/Logo.vue';
 import Button from './../components/Button.vue';
 import LoginSection from './../components/LoginSection.vue';
 import Facebook from './../components/Facebook.vue';
+import Text from './../components/Text.vue';
 
 
 export default {
@@ -14,13 +14,14 @@ export default {
     Logo,
     Button,
     LoginSection,
-    Facebook
+    Facebook,
+    Text
   },
     data () {
     return {
       gitLogo: require('./../assets/github-Logo.png'),
       googleLogo: require('./../assets/google-Logo.jpg')
-
+      
     }
   }
 }
@@ -28,7 +29,6 @@ export default {
 
 <template>
   <div class="Fahad">
-
   <div class="fahadContainer">
   <Navbar />
   </div>
@@ -38,20 +38,19 @@ export default {
     </div>
 
     <div class="faiz2">
-    <Button text="Login With Google" bgColor="white" :logoPath=googleLogo textcolor="white" />
-    <Button text="Login With GitHUB" bgColor="black" :logoPath=gitLogo textcolor="white" />
-    <Button text="Login With Facebook" bgColor="#2a4074" :logoPath=gitLogo textcolor="white" />
+    <Button class="Google-l" text="Login With Google" bgColor="white" :logoPath=googleLogo textcolor="white" />
+    <Button class="Github-g" text="Login With GitHUB" bgColor="black" :logoPath=gitLogo textcolor="white" />
+    <Button text="Login With Facebook" bgColor="#2a4074" :logoPath=facebook-Logo textcolor="white" />
 
     </div>
-
     <LoginSection />
 
+    <Text />
   </div>
 </template>
 
 
 <style>
-
 .fahadContainer{
   width: 100%
 }
@@ -62,12 +61,10 @@ export default {
      align-items: center;
 }
 .faiz{
-    padding-top: 20px;
-    padding-bottom: 20px;
+  height: 160px;
 }
 .faiz2{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
 }
 
 </style>

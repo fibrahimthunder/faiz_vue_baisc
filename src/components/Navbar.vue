@@ -1,11 +1,3 @@
-<script>
-
-export default {
-  name: 'Navbar',
- 
-}
-</script>
-
 <template>
   <div>
 
@@ -18,12 +10,18 @@ export default {
   </div>
 </template>
 
+<script>
+export default {
+  name: 'Navbar',
+}
+</script>
+
+
 
 <style>
-
 .faizcontainerOrange{
-  background-color: orange;
-  height: 5px
+  background-color: #E56F0D;
+  height: 3px
 }
 #Navbar{
     background-color: black;
@@ -37,12 +35,15 @@ export default {
   height: 30px;
   width: 30px;
   margin-left: 10%;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   padding: 10px;
+  margin-top: 22px;
 }
 #text{
     color: white;
     margin-left: 5px;
     margin-top: 15px;
+    font-weight: bold;
+    width: 143px;
 }
 </style>

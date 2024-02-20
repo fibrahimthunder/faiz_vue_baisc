@@ -3,7 +3,6 @@ import Logo from './../components/Logo.vue';
 import LoginSection from './../components/LoginSection.vue';
 
 
-
 export default {
   name: 'SignUpScreen',
   components: {
@@ -17,7 +16,7 @@ export default {
   <div class="Fahad">
     <Logo />
     <p>SIGNUP</p>
-
+    
         <LoginSection />
 
 
