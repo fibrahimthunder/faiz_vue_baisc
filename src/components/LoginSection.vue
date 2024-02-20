@@ -22,7 +22,7 @@ export default {
     display: flex;
     flex-direction: column;
     border-radius: 8px;
-    width: 238px;
+    width: 252px;
     background-color: black;
     justify-content: center;
     padding: 14px;
@@ -30,12 +30,12 @@ export default {
 }
 .text-email{
     color: white;
-    margin-left: 18px;
+    margin-left: 26px;
     height: 2px;
 }
 .email{
     border-radius: 8px;
-    margin-left: 14px;
+    margin-left: 21px;
     width: 206px;
     height: 23px;
     padding: 3px;
@@ -44,12 +44,12 @@ export default {
 }
 .text-password{
     color: white;
-    margin-left: 18px;
+    margin-left: 26px;
     height: 2px;
 }
 .Password{
     border-radius: 8px;
-    margin-left: 14px;
+    margin-left: 21px;
     width: 206px;
     height: 23px;
     padding: 3px;
@@ -60,7 +60,7 @@ export default {
     padding: 8px;
     background-color: blue;
     color: white;
-    margin-left: 16px;
+    margin-left: 21px;
     margin-top: 18px;
     border-color: none;
 }

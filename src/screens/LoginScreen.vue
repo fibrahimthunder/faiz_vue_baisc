@@ -5,6 +5,7 @@ import Button from './../components/Button.vue';
 import LoginSection from './../components/LoginSection.vue';
 import Facebook from './../components/Facebook.vue';
 import Text from './../components/Text.vue';
+import Google from './../components/Google.vue';
 
 
 export default {
@@ -15,12 +16,14 @@ export default {
     Button,
     LoginSection,
     Facebook,
-    Text
+    Text,
+    Google
   },
     data () {
     return {
       gitLogo: require('./../assets/github-Logo.png'),
-      googleLogo: require('./../assets/google-Logo.jpg')
+      googleLogo: require('./../assets/google-Logo.jpg'),
+      facebooklogo: require('./../assets/facebook-logo.jpg'),
       
     }
   }
@@ -29,42 +32,47 @@ export default {
 
 <template>
   <div class="Fahad">
-  <div class="fahadContainer">
+  <div class="NavbarContainer">
   <Navbar />
   </div>
 
-  <div class="faiz">
+  <div class="Teams-logo">
     <Logo />
     </div>
 
-    <div class="faiz2">
-    <Button class="Google-l" text="Login With Google" bgColor="white" :logoPath=googleLogo textcolor="white" />
-    <Button class="Github-g" text="Login With GitHUB" bgColor="black" :logoPath=gitLogo textcolor="white" />
-    <Button text="Login With Facebook" bgColor="#2a4074" :logoPath=facebook-Logo textcolor="white" />
+    <Google class="Google-button" text="Login With Google" bgColor="white" :logoPath=googleLogo textcolor="white" />
+    <Google class="Github-button" text="Log in With GitHUB" bgColor="black" :logoPath=gitLogo textcolor="white" />
+    <Google class="Facebook-button" text="Log in With Facebook" />
 
-    </div>
-    <LoginSection />
+    <LoginSection  class="login-section" />
 
     <Text />
   </div>
 </template>
 
-
 <style>
-.fahadContainer{
+.NavbarContainer{
   width: 100%
 }
 .Fahad{
     display: flex;
     flex-direction: column;
     justify-content: "center";
-     align-items: center;
+    align-items: center;
 }
-.faiz{
-  height: 160px;
+.Teams-logo{
+  height: 155px;
 }
-.faiz2{
-    padding-bottom: 17px;
+.login-section{
+  margin-top: 10px;
 }
-
+.Google-button{
+  margin-bottom: 11px;
+}
+.Github-button{
+  margin-bottom: 11px;
+}
+.Facebook-button{
+  margin-bottom: 11px;
+}
 </style>
