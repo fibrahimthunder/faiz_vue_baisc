@@ -15,11 +15,6 @@ export default {
 <template>
   <div class="Fahad">
     <Logo />
-    <p>SIGNUP</p>
-    
-        <LoginSection />
-
-
   </div>
 </template>
 

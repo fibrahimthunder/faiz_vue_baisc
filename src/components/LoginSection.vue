@@ -4,7 +4,7 @@
 <label class="text-email" for="uname">Email</label>
     <br>
     <input class="email" type="text" name="uname" required>
-    <label class="text-password" type="psw">Password</label>     <br>
+    <label class="text-password" type="psw">Password</label><br>
     <input class="Password" type="password" name="psw" required>
     <button class="login-button" type="submit">Login</button>
     <label>
@@ -23,13 +23,14 @@ export default {
     flex-direction: column;
     border-radius: 8px;
     width: 252px;
-    background-color: black;
+    background-color: white;
     justify-content: center;
     padding: 14px;
     height: 203px;
+    border: 1px solid black;
 }
 .text-email{
-    color: white;
+    color: black;
     margin-left: 26px;
     height: 2px;
 }
@@ -43,7 +44,7 @@ export default {
     border-color: none;
 }
 .text-password{
-    color: white;
+    color: black;
     margin-left: 26px;
     height: 2px;
 }

@@ -5,6 +5,8 @@ import LoginScreen from '@/screens/LoginScreen'
 import SignUpScreen from '@/screens/SignUpScreen'
 import Text from '@/components/Text'
 import Google from '@/components/Google'
+import SignupButton from '@/components/SignupButton'
+import Searchbar from '@/components/Searchbar'
 
 Vue.use(Router)
 
@@ -34,6 +36,16 @@ export default new Router({
       path: '/Google',
       name: 'Google',
       component: Google
+    },
+    {
+      path: '/SignupButton',
+      name: 'SignupButton',
+      component: SignupButton
+    },
+    {
+      path: '/Searchbar',
+      name: 'Searchbar',
+      component: Searchbar
     }
   ]
 })

@@ -41,10 +41,11 @@ export default {
     </div>
 
     <Google class="Google-button" text="Login With Google" bgColor="white" :logoPath=googleLogo textcolor="white" />
-    <Google class="Github-button" text="Log in With GitHUB" bgColor="black" :logoPath=gitLogo textcolor="white" />
-    <Google class="Facebook-button" text="Log in With Facebook" />
+    <Google class="Github-button" text="Log in With Github" bgColor="black" :logoPath=gitLogo textcolor="white" />
+    <Google class="Github-button" text="Log in With Facebook" bgColor="#2a4074" :logoPath=facebooklogo textcolor="white" />
 
     <LoginSection  class="login-section" />
+
 
     <Text />
   </div>
