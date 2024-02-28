@@ -7,6 +7,7 @@ import Text from '@/components/Text'
 import Google from '@/components/Google'
 import SignupButton from '@/components/SignupButton'
 import Searchbar from '@/components/Searchbar'
+import Stacknav from '@/components/Stacknav'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/Searchbar',
       name: 'Searchbar',
       component: Searchbar
+    },
+    {
+      path: '/Stacknav',
+      name: 'Stacknav',
+      component: Stacknav
     }
   ]
 })

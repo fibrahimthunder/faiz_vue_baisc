@@ -6,7 +6,6 @@
       <img id="LogoStyle" src="./../assets/stackover flowWhite.png">
       <p id="text">FOR TEAMS</p>
     </div>
-
   </div>
 </template>
 

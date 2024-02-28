@@ -24,7 +24,6 @@ export default {
       gitLogo: require('./../assets/github-Logo.png'),
       googleLogo: require('./../assets/google-Logo.jpg'),
       facebooklogo: require('./../assets/facebook-logo.jpg'),
-      
     }
   }
 }
