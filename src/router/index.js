@@ -4,7 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import LoginScreen from '@/screens/LoginScreen'
 import SignUpScreen from '@/screens/SignUpScreen'
 import Text from '@/components/Text'
-import Google from '@/components/Google'
+import SocialButton from '@/components/SocialButton'
 import SignupButton from '@/components/SignupButton'
 import Searchbar from '@/components/Searchbar'
 import Stacknav from '@/components/Stacknav'
@@ -34,9 +34,9 @@ export default new Router({
       component: Text    
     },
     {
-      path: '/Google',
-      name: 'Google',
-      component: Google
+      path: '/SocialButton',
+      name: 'SocialButton',
+      component: SocialButton
     },
     {
       path: '/SignupButton',

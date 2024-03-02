@@ -1,3 +1,17 @@
+<script>
+import Searchbar from './../components/Searchbar.vue';
+import SignupButton from './../components/SignupButton.vue';
+
+
+export default {
+  name: 'Navbar',
+  components:{
+    Searchbar,
+    SignupButton,
+  }
+}
+</script>
+
 <template>
   <div>
 
@@ -5,17 +19,14 @@
     <div id="Navbar">
       <img id="LogoStyle" src="./../assets/stackover flowWhite.png">
       <p id="text">FOR TEAMS</p>
+      <Searchbar class="SearchLx" />
+      <Loginbutton class="Loginbnt" />
+      <SignupButton class="loginbtn" text="Log in" textColor="blue" bgColor="white"/>
+      <SignupButton class="signupbtn" text="Sign up" textColor="white" bgColor="blue"/>
+      
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'Navbar',
-}
-</script>
-
-
 
 <style>
 .faizcontainerOrange{
@@ -30,6 +41,9 @@ export default {
     height: 50px;
     width: 100%;
 }
+#Navbar:hover{
+  background-color: rgb(60, 58, 58);
+}
 #LogoStyle{
   height: 30px;
   width: 30px;
@@ -37,6 +51,7 @@ export default {
   margin-bottom: 30px;
   padding: 10px;
   margin-top: 22px;
+  cursor: pointer;
 }
 #text{
     color: white;
@@ -44,5 +59,15 @@ export default {
     margin-top: 15px;
     font-weight: bold;
     width: 143px;
+    cursor: pointer;
+}
+.SearchLx{
+  
+}
+.Loginbnt{
+  margin-left: 200px;
+}
+.signupbtn{
+  margin-left: 5px;
 }
 </style>

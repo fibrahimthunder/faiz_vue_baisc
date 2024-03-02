@@ -1,6 +1,6 @@
 <template>
 <div class="text-container">
-<a>Don,t have an account?</a>
+<p>Don,t have an account?</p>
 <a class="Signup-text">Sign up</a>
 </div>
 </template>
@@ -12,6 +12,10 @@ export default {
 </script>
 
 <style>
+
+.text-container {
+  background-color: aqua;
+}
 .Signup-text{
     color: blue;
 }

@@ -1,11 +1,10 @@
 <script>
 import Navbar from './../components/Navbar.vue';
 import Logo from './../components/Logo.vue';
-import Button from './../components/Button.vue';
 import LoginSection from './../components/LoginSection.vue';
 import Facebook from './../components/Facebook.vue';
 import Text from './../components/Text.vue';
-import Google from './../components/Google.vue';
+import SocialButton from './../components/SocialButton.vue';
 
 
 export default {
@@ -13,11 +12,10 @@ export default {
   components: {
     Navbar,
     Logo,
-    Button,
     LoginSection,
     Facebook,
     Text,
-    Google
+    SocialButton
   },
     data () {
     return {
@@ -39,15 +37,18 @@ export default {
     <Logo />
     </div>
 
-    <Google class="Google-button" text="Login With Google" bgColor="white" :logoPath=googleLogo textcolor="white" />
-    <Google class="Github-button" text="Log in With Github" bgColor="black" :logoPath=gitLogo textcolor="white" />
-    <Google class="Github-button" text="Log in With Facebook" bgColor="#2a4074" :logoPath=facebooklogo textcolor="white" />
+    <SocialButton class="Google-button" text="Login With Google" textColor="black" bgColor="white" :logoPath=googleLogo textcolor="white" />
+    <SocialButton class="Github-button" text="Log in With Github" textColor="white" bgColor="black" :logoPath=gitLogo textcolor="white" />
+    <SocialButton class="Github-button" text="Log in With Facebook"  bgColor="#2a4074" :logoPath=facebooklogo textcolor="white" />
 
     <LoginSection  class="login-section" />
-
-
-    <Text />
+   
+    <div class="text-container">
+      <p class="text-p1">Don,t have an account? Sign up</p>
+      <p class="text-p2">Are you an employer? Sign up on Talent</p>
+      </div>
   </div>
+  
 </template>
 
 <style>
@@ -74,5 +75,12 @@ export default {
 }
 .Facebook-button{
   margin-bottom: 11px;
+}
+.text-p1{
+  text-align: center;
+  margin-top: 40px;
+}
+.text-p2{
+  text-align: center; 
 }
 </style>

@@ -33,6 +33,9 @@ export default {
     color: black;
     margin-left: 26px;
     height: 2px;
+    cursor: pointer;
+    margin-bottom: 3px;
+    font-weight: bold;
 }
 .email{
     border-radius: 8px;
@@ -47,6 +50,9 @@ export default {
     color: black;
     margin-left: 26px;
     height: 2px;
+    cursor: pointer;
+    margin-bottom: 3px;
+    font-weight: bold;
 }
 .Password{
     border-radius: 8px;
@@ -59,10 +65,14 @@ export default {
     width: 214px;
     border-radius: 6px;
     padding: 8px;
-    background-color: blue;
+    background-color:  rgb(65, 65, 238);;
     color: white;
     margin-left: 21px;
     margin-top: 18px;
     border-color: none;
+    cursor: pointer;
+}
+.login-button:hover{
+    background-color: blue;
 }
 </style>
