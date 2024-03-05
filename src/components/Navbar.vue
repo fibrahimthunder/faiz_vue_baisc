@@ -1,6 +1,7 @@
 <script>
 import Searchbar from './../components/Searchbar.vue';
 import SignupButton from './../components/SignupButton.vue';
+import SocialButton from './SocialButton.vue';
 
 
 export default {
@@ -8,6 +9,7 @@ export default {
   components:{
     Searchbar,
     SignupButton,
+    SocialButton
   }
 }
 </script>
@@ -21,8 +23,9 @@ export default {
       <p id="text">FOR TEAMS</p>
       <Searchbar class="SearchLx" />
       <Loginbutton class="Loginbnt" />
-      <SignupButton class="loginbtn" text="Log in" textColor="blue" bgColor="white"/>
-      <SignupButton class="signupbtn" text="Sign up" textColor="white" bgColor="blue"/>
+      
+      <SocialButton text="Log in" textColor="blue" bgColor="white"  b_width="60px"/>
+      <SocialButton text="Sign up" textColor="white" bgColor="blue"  b_width="60px"/>
       
     </div>
   </div>

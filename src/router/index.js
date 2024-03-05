@@ -8,6 +8,8 @@ import SocialButton from '@/components/SocialButton'
 import SignupButton from '@/components/SignupButton'
 import Searchbar from '@/components/Searchbar'
 import Stacknav from '@/components/Stacknav'
+import Spacialcard from '@/components/Spacialcard'
+import DashboardScreen from '../screens/DashboardScreen.vue'
 
 Vue.use(Router)
 
@@ -52,6 +54,11 @@ export default new Router({
       path: '/Stacknav',
       name: 'Stacknav',
       component: Stacknav
+    },
+    {
+      path: '/DashboardScreen',
+      name: 'DashboardScreen',
+      component: DashboardScreen
     }
   ]
 })

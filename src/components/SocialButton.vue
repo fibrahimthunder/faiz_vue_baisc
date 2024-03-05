@@ -1,7 +1,7 @@
 <template>
   <div class="Google-container" >
-    <button id="Google-icon" :style="{ backgroundColor: bgColor }">
-      <img id="Google-Logo" :src="logoPath" />
+    <button id="Google-icon" :style="{ backgroundColor: bgColor, height: b_height, width: b_width }">
+         <img  id="Google-Logo" :src="logoPath" v-if="!!logoPath" />
       <p id="Google-text" :style="{ color: textColor }">{{ text }}</p>
     </button>
   </div>
@@ -20,12 +20,21 @@ export default {
     },
     textColor: {
       type: String,
-      default: "black",
+       default:'white'
     },
     logoPath: {
       type: String,
-      required: true,
+      required: false,
     },
+    b_width: {
+       type: String,
+       default: "300px"
+    },
+    b_height: {
+        type: String,
+       default: "30px"
+    },
+  
   },
 };
 </script>
@@ -38,12 +47,7 @@ export default {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  height: 37px;
-  padding-left: 70px;
-  padding-right: 70px;
-  position: relative;
-  cursor: pointer;
-}
+  }
 #Google-text {
   padding-left: 4px;
   color: black;

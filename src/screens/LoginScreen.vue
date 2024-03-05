@@ -5,6 +5,7 @@ import LoginSection from './../components/LoginSection.vue';
 import Facebook from './../components/Facebook.vue';
 import Text from './../components/Text.vue';
 import SocialButton from './../components/SocialButton.vue';
+import Spacialcard from '../components/Spacialcard.vue';
 
 
 export default {
@@ -15,7 +16,8 @@ export default {
     LoginSection,
     Facebook,
     Text,
-    SocialButton
+    SocialButton,
+    Spacialcard
   },
     data () {
     return {
@@ -37,9 +39,12 @@ export default {
     <Logo />
     </div>
 
-    <SocialButton class="Google-button" text="Login With Google" textColor="black" bgColor="white" :logoPath=googleLogo textcolor="white" />
-    <SocialButton class="Github-button" text="Log in With Github" textColor="white" bgColor="black" :logoPath=gitLogo textcolor="white" />
-    <SocialButton class="Github-button" text="Log in With Facebook"  bgColor="#2a4074" :logoPath=facebooklogo textcolor="white" />
+    <SocialButton class="Google-button" text="Login With Google" textColor="black" bgColor="white" :logoPath=googleLogo  />
+    <SocialButton class="Github-button" text="Log in With Github" textColor="white" bgColor="black" :logoPath=gitLogo  />
+    <SocialButton text="Log in With Facebook" textColor="white" bgColor="blue" :logoPath="facebooklogo" />
+
+
+    
 
     <LoginSection  class="login-section" />
    
