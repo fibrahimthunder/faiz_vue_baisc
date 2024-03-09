@@ -1,7 +1,7 @@
 <template>
 <div class="input_container">
 <input class="search-input" type="text" v-model="input" placeholder="Search"/>
-<img src="./../assets/searchbar-icon.png" alt="Logo" class="logo"> 
+<img src="./../assets/searchbar-Icon.png" alt="Logo" class="logo"> 
 </div>
 </template>
 

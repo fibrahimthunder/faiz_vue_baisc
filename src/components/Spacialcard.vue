@@ -1,15 +1,12 @@
-import SocialButton from './../components/SocialButton.vue';
 <template>
-    <div class="training-section" >
         <div class="card-container" :style="{ backgroundColor: bgColor}">
             <div class="training-items">
-                <img class="spacial-logo" :src="logoPath">
-                <p>{{heading}}</p>
-                <SocialButton class="Community-button" text="Join the community" textColor="white" bgColor="orange" textcolor="white" b_width="160px" b_height="30px"/>
-                <p class="Search-para" >{{subheading}}</p>
+                <img class="spacial-logo" :src="logoPath" >
+                <p class="heading">{{heading}}</p>
+                <SocialButton class="Community-button" dynamicBorderRadius="7px" text="Join the community"  textColor="white" bgColor="orange"  b_width="200px" b_height="40px"/>
+                <p class="Search-para" v-if="!!subheading" > {{subheading}}</p>
             </div>
         </div>
-    </div>
 </template>
 
 <script>
@@ -17,10 +14,9 @@ import SocialButton from './SocialButton.vue';
 
 export default {
     name: 'Spacial',
-    components: {
+    components:{
         SocialButton
     },
-
     props:{
         heading: {
       type: String,
@@ -36,7 +32,7 @@ export default {
       default: "black",
     },
     logoPath:{
-        type: String,
+      type: String,
       required: false,
     }
 }
@@ -49,17 +45,10 @@ export default {
     padding: 0px;
     font-family: sons-serif;
 }
-.training-section{
-    width: 100%;
-    height: 300px;
-}
-.training-section h1{
-    text-align: center;
-}
+
 .card-container{
-    width: 280px;
+    width: 200px;
     margin: auto;
-    border: 1px solid red;
     margin-top: 20px;
     border-radius: 12px;
     padding-left: 70px;
@@ -69,7 +58,7 @@ export default {
     
 }
 .spacial-logo{
-        height: 20px;
+        height: 30px;
         width: 30px;
         margin-top: 10px; 
         align-items: center;  
@@ -88,5 +77,10 @@ export default {
 .Search-para{
     text-align: center;
     margin-top: 10px;
+}
+.heading{
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
 }
 </style>

@@ -39,13 +39,10 @@ export default {
     <Logo />
     </div>
 
-    <SocialButton class="Google-button" text="Login With Google" textColor="black" bgColor="white" :logoPath=googleLogo  />
+    <SocialButton class="Google-button" text="Login With Google" textColor="black" bgColor="white" :logoPath=googleLogo :rightlogoPath=googleLogo  />
     <SocialButton class="Github-button" text="Log in With Github" textColor="white" bgColor="black" :logoPath=gitLogo  />
-    <SocialButton text="Log in With Facebook" textColor="white" bgColor="blue" :logoPath="facebooklogo" />
-
-
+    <SocialButton text="Log in With Facebook" textColor="white" bgColor="blue" dynamicBorderRadius="5px" :logoPath="facebooklogo" />    
     
-
     <LoginSection  class="login-section" />
    
     <div class="text-container">
@@ -58,7 +55,7 @@ export default {
 
 <style>
 .NavbarContainer{
-  width: 100%
+  width: 100%;
 }
 .Fahad{
     display: flex;

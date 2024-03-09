@@ -24,8 +24,8 @@ export default {
       <Searchbar class="SearchLx" />
       <Loginbutton class="Loginbnt" />
       
-      <SocialButton text="Log in" textColor="blue" bgColor="white"  b_width="60px"/>
-      <SocialButton text="Sign up" textColor="white" bgColor="blue"  b_width="60px"/>
+      <SocialButton text="Log in" textColor="blue" bgColor="white"  b_width="90px"/>
+      <SocialButton text="Sign up" textColor="white" bgColor="blue"  b_width="90px"/>
       
     </div>
   </div>
