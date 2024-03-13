@@ -1,10 +1,17 @@
 <template>
-<div>
-  <img class="arrowplain-logo" :src="lastPath">
-  <p class="Text1">{{ text1 }}</p>
-  <p class="Text2">{{ text2 }}</p>
+  <div class="maincomponent" :style="{ marginTop: marginTop }">
 
-</div>
+  <div class="mainlogo">
+  <img class="arrowplain-logo" :src="lastPath"> 
+  </div>
+
+
+  <div class="maintext">
+  <p class="Heading1">{{ heading1 }}</p>
+  <p class="Subhiding1">{{ subhiding1 }}</p>
+  </div>
+
+  </div>
 </template>
 
 <script>
@@ -16,14 +23,18 @@ export default {
       type: String,
       required: true,
     },
-    text1:{
+    heading1:{
       type: String,
       required: true,
     },
-    text2:{
+    subhiding1:{
       type: String,
-      required: true,
+      required: false,
     },
+    marginTop: {
+      type: String,
+      required: false,
+    }
   }
 };
 
@@ -31,14 +42,40 @@ export default {
 
 
 <style>
+.maincomponent{
+  display: flex;
+flex-direction: column;
+align-items: center;
+  width: 100%;
+}
+.mainlogo{
+  justify-content: center;
+  display: flex;
+}
 .arrowplain-logo{
   width: 110px;
   height: 110px;
+  border-radius: 29px;
 }
-.Text1{
+.maintext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.Heading1{
+  display: flex;
   color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-.Text2{
-  color:  white;
+.Subhiding1{
+  display: flex;
+  color: white;
+  margin-top: 17px;
+  text-align: center;
+  width: 90%;
 }
 </style>

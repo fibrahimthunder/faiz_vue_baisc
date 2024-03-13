@@ -4,6 +4,8 @@ import BigCard from '../components/BigCard.vue';
 import BigStackoverflow from '../components/BigStackoverflow.vue';
 import tickComponent from '../components/tickComponent.vue';
 import stackdisplay from '../components/stackdisplay.vue';
+import fourCards from '../components/fourCards.vue';
+import TextComponent from '../components/TextComponent.vue';
 
 export default {
   name: 'DashboardScreen',
@@ -12,16 +14,21 @@ export default {
     BigCard,
     BigStackoverflow,
     tickComponent,
-    stackdisplay
+    stackdisplay,
+    fourCards,
+    TextComponent
   },
   data(){
     return{
-      searchbarIcon: require('./../assets/searchbar-Icon.png'),
       bigImg1: require('./../assets/bigImg1.svg'),
       bigImg2: require('./../assets/bigImg2.svg'),
       tick: require('./../assets/tick.jpg'),
       arrowplain: require('./../assets/arrowplain.jpg'),
+      datalogo: require('./../assets/datalogo.jpg'),
+      softwarelogo: require('./../assets/softwarelogo.png'),
       handfree: require('./../assets/handfree.png'),
+      leadershiplogo: require('./../assets/leadershiplogo.jpg'),
+      searchbarIcon: require('./../assets/searchbar-Icon.png'),
     }
   }
 }
@@ -41,18 +48,23 @@ export default {
   </div>
 
   
-  <div class="overflowCard">
+    <div class="overflowCard">
     <BigStackoverflow Text1="stackoverflow" />
     
-  <div class="TickComponent">
-    <tickComponent TextComp1="Increase productivity" TextComp2="If somebody somewhere has the right" TextComp3=" answer, suddenly you have it too." TextComp4="Collaborate better in a remote-first world." :logoPath="tick" />
-    <tickComponent TextComp1="Accelerate time to market" TextComp2="Shorten the time between initial idea and" TextComp3="complete product. Take delays and" TextComp4="misinformation out of the equation."  :logoPath="tick" />
-    <tickComponent TextComp1="Protect institutional knowledge" TextComp2="People come and people go, but if you" TextComp3="capture their contributions in one central" TextComp4="place, that expertise sticks around." :logoPath="tick" />
-  </div>
 
-  <div class="hr-line">
+    <div class="TickCompParent">
+    <div class="TickComponent">
+    <tickComponent Mainhiding="Increase productivity" subhiding="If somebody somewhere has the right answer, suddenly you have it too. Collaborate better in a remote-first world." :logoPath="tick" />
+    <tickComponent Mainhiding="Accelerate time to market" subhiding="Shorten the time between initial idea and complete product. Take delays and misinformation out of the equation."  :logoPath="tick" />
+    <tickComponent Mainhiding="Protect institutional knowledge" subhiding="People come and people go, but if you capture their contributions in one central place, that expertise sticks around." :logoPath="tick" />
+    </div>
+    </div>
+
+    <div class="MainHrlineParent">
+    <div class="hr-line">
     <hr>
-  </div>
+    </div>
+    </div>
 
   <div class="part2Text">
   <p>Ensure your company stays on course</p>
@@ -62,12 +74,35 @@ export default {
     <p>Here are just a few types of technologists that we help.</p>
   </div>
 
-  <div>
-    <stackdisplay text1="DevOps" text2="engineers" :lastPath=" arrowplain" />
-    <stackdisplay text1="DevOps" text2="engineers" :lastPath=" handfree" />
+  <div class="optionsSectionParent">
+  <div class="secondNumCards">
+    <stackdisplay heading1="DevOps engineers"  :lastPath=" arrowplain" marginTop="50px"/>
+    <stackdisplay heading1="Data scientists" :lastPath=" datalogo" marginTop="50px"/>
+    <div class="insideComp">
+    <stackdisplay heading1="Software engineers" subhiding1="Help engineers be more efficient and streamline knowledge sharing using a tool they already love and trust. " :lastPath=" softwarelogo" />
+    </div>
+    <stackdisplay heading1="Support teams" :lastPath=" handfree" marginTop="50px"/>
+    <stackdisplay heading1="Engineers leaders" :lastPath=" leadershiplogo" marginTop="50px"/>
+   </div>
+  </div>
+
+   <div class="sixComp">
+   <p style="color: white;">Annual billing discount</p>
+   </div>
+   
+   <div class="fordisplaycards">
+   <fourCards text="Free" bgColor2="red" text2="No credit card required" text1="Free" bgColor="#E7700D" textColor="white" b_height="26px" b_width="45px" dynamicPadding="3px" :logoIcon="searchbarIcon" :logoIcon2="searchbarIcon" :logoIcon3="searchbarIcon"  text3="ChatOps integrations - Slack & Microsoft Teams" text4="Your own private space hosted on stackoverflowteams.com" text5="Structured and searchable knowledge base" buttonBgColor="#C45F0E" btntext="Create a free Teams" btnTextColor="white" btnmargintop="90px" />
+   <fourCards text="Basic" bgColor2="grey" text2="per teammate / month" text1="$6.50 USD" bgColor="#C8CCD0" textColor="black" b_width="54px" dynamicPadding="4px" :logoIcon="searchbarIcon" :logoIcon2="searchbarIcon" :logoIcon3="searchbarIcon" :logoIcon4="searchbarIcon" text6="Structured and searchable knowledge base" text3="Single sign-on (SSO) with SAML + Okta integration" text4="ChatOps integrations - Slack & Microsoft Teams" text5="Your own private space hosted on stackoverflowteams.com" buttonBgColor="#C8CCD0" btntext="Get started" btnTextColor="blue" />
+   <fourCards text="Business" bgColor2="grey" text2="per teammate / month" text1="$13.50 USD" bgColor="#3B4045" textColor="white" b_width="80px" dynamicPadding="5px" :logoIcon="searchbarIcon" :logoIcon2="searchbarIcon" :logoIcon3="searchbarIcon" :logoIcon4="searchbarIcon" text6="Usage and adoption metrics" text3="All the features of Basic plus…" text4="Long-form knowledge with Articles" text5="Group content together into Collections" :logoIcon5="searchbarIcon"  text7="Priority customer support" buttonBgColor="#3B4045" btntext="Get started" btnTextColor="white"/>
+   <fourCards text="Enterprise" bgColor2="grey" text2="Let’s talk about what you need" text1="Custom pricing" bgColor="#2B2D6E" textColor="white" b_width="80px" dynamicPadding="6px" :logoIcon="searchbarIcon" :logoIcon2="searchbarIcon" :logoIcon3="searchbarIcon" :logoIcon4="searchbarIcon" text6="Your own customer success and community building representative" text3="Premium features of Business plus…" text4="Unlimited Teams within your instance" :logoIcon5="searchbarIcon" text5="Robust read and write API" text7="Your own customer success and community building representative" buttonBgColor="#181A47" btntext="Request a demo" btnTextColor="white" />
    </div>
 
+
+   <TextComponent />
+
   </div>
+
+
 
 </div>
 </template>
@@ -100,24 +135,38 @@ export default {
   width: 93%;
   background-color: black;
   margin-top: 10px;
-  height: 1000px;
+  height: 2100px;
   border-radius: 10px;
 }
 .overflowCard{
   padding: 50px;
   width: 85%;
 }
+.TickCompParent{
+  justify-content: center ;
+  display: flex;
+}
 .TickComponent{
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-around;
+  width: 65%;
+}
+.insideComp{
+  background-color: rgb(100, 97, 97);
+  width: 200%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+.MainHrlineParent{
   display: flex;
   justify-content: center;
   margin-top: 90px;
-  justify-content: space-around;
 }
 .hr-line{
   width: 40%;
-  margin-top: 90px;
   color: rgb(100, 97, 97);
-  justify-content: center;
 }
 .part2Text{
   font-weight: bold;
@@ -131,5 +180,27 @@ export default {
   margin-top: 10px;
   text-align: center;
   font-size: 19px;
+}
+.optionsSectionParent {
+  display: flex;
+  width: 100%;
+  margin-top: 70px;
+  justify-content: center;
+}
+.secondNumCards{
+  display: flex;
+  justify-content: space-around;
+  width:70%;
+}
+.secondNumCards:hover{
+  color: rgb(70, 69, 69);;
+}
+.sixComp{
+  margin-top: 150px;
+  margin-left: 15px;
+}
+.fordisplaycards{
+  display: flex;
+  justify-content: space-around;
 }
 </style>

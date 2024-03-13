@@ -1,12 +1,21 @@
 <template>
-    <div>
+    <div class="tickParentDiv">
+
+
+    <div class="MainTickLogoParent">
     <img class="tick-logo" :src="logoPath">
-    <p class="textComp1">{{ TextComp1 }}</p>
+    </div>
+
+
+    <div class="ParentText">
+    <p class="Mainhiding">{{ Mainhiding }}</p>
+    </div>
+    
     <div class="Main-text">
-    <p class="textComp2">{{ TextComp2 }}</p>
-    <p class="textComp3">{{ TextComp3 }}</p>
-    <p class="textComp4">{{ TextComp4 }}</p>
-</div>
+    <p class="Subhiding">{{ subhiding }}</p>
+    </div>
+
+
 </div>
 
 </template>
@@ -16,7 +25,7 @@ export default {
   name: 'tickComponent',
 
   props:{
-    TextComp1:{
+    Mainhiding:{
       type: String,
       required: true,
     },
@@ -24,20 +33,8 @@ export default {
         type: String,
       required: true,
     },
-    TextComp2:{
+    subhiding:{
       type: String,
-      required: true,
-    },
-    TextComp3:{
-      type: String,
-      required: true,
-    },
-    TextComp3:{
-      type: String,
-      required: true,
-    },
-    TextComp4:{
-        type: String,
       required: true,
     }
   }
@@ -47,32 +44,38 @@ export default {
 
 
 <style>
+.tickParentDiv{
+width: 300px;
+}
+.MainTickLogoParent{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
 .tick-logo{
     height: 17px;
     width: 17px;
     border-radius: 10px;
-    margin-bottom: 10px;
 }
-.textComp1{
+.ParentText{
+  display: flex;
+  justify-content: center;
+}
+.Mainhiding{
     color: white;
     font-weight: bold;
     font-size: 20px;
+    text-align: center;
 }
-.textComp2{
+.Subhiding{
     color: rgb(100, 97, 97);
     text-align: center;
 }
-.textComp3{
-  color: rgb(100, 97, 97);
-  text-align: center;  
-}
+
 .Main-text{
     margin-top: 14px;
     text-align: center;
 }
-.textComp4{
-    color: rgb(100, 97, 97);
-    text-align: center;
-}
+
 
 </style>

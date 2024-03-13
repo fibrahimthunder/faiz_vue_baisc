@@ -4,7 +4,7 @@ import SignupButton from './../components/SignupButton.vue';
 import SocialButton from './SocialButton.vue';
 
 
-export default {
+export default { 
   name: 'Navbar',
   components:{
     Searchbar,

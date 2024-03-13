@@ -71,6 +71,7 @@ export default {
 }
 .stackbtn{
   margin-top: 40px;
-  margin-left: 580px;
+  justify-content: center;
+  display: flex;
 }
 </style>
