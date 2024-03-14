@@ -1,6 +1,12 @@
 <template>
     <div class="fourCardcontainer">
- 
+
+
+        <div class="Texttop" v-if="texttop, logoIcon6">
+        <p>{{ texttop }}</p>
+        <img class="mainlogoes1" :src="logoIcon6">
+        </div>
+        
         <div class="freetext" :style="{ backgroundColor: bgColor, color: textColor, height: b_height, width: b_width, padding: dynamicPadding }">
         <p>{{ text }}</p>
         </div>
@@ -62,6 +68,10 @@
         </div>
           
 
+        <div class="endOfbtnText" :style="{ color: dynamicColor }" >
+          <p>{{ text8 }}</p>
+        </div>
+
     </div>
 </template>
 
@@ -120,6 +130,10 @@ export default {
         type: String,
       required: true,
     },
+    logoIcon6:{
+        type: String,
+      required: true,
+    },
     logoIcon3:{
         type: String,
       required: true,
@@ -167,6 +181,18 @@ export default {
    btnmargintop:{
     type: String,
     default: "",
+   },
+   text8:{
+    type: String,
+    required: true,
+   },
+   dynamicColor:{
+    type: String,
+    default: "",
+   },
+   texttop:{
+    type: String,
+    required: true,
    }
   }
 };
@@ -263,4 +289,18 @@ export default {
     flex: 1;
 
   }
+  .endOfbtnText{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .Texttop{
+    margin-left: 20px;
+    display: flex;
+  }
+  .mainlogoes1{
+    height: 20px;
+    width: 20px;
+    margin-left: 180px;
+  }
+
 </style>
