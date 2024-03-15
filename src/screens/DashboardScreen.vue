@@ -7,6 +7,8 @@ import stackdisplay from '../components/stackdisplay.vue';
 import fourCards from '../components/fourCards.vue';
 import TextComponent from '../components/TextComponent.vue';
 import IntegrateText from '../components/IntegrateText.vue';
+import Textandlogo from '../components/Textandlogo.vue';
+import invertedcomma from '../components/invertedcomma.vue';
 
 export default {
   name: 'DashboardScreen',
@@ -18,7 +20,9 @@ export default {
     stackdisplay,
     fourCards,
     TextComponent,
-    IntegrateText 
+    IntegrateText ,
+    Textandlogo,
+    invertedcomma
   },
   data(){
     return{
@@ -31,6 +35,9 @@ export default {
       handfree: require('./../assets/handfree.png'),
       leadershiplogo: require('./../assets/leadershiplogo.jpg'),
       searchbarIcon: require('./../assets/searchbar-Icon.png'),
+      keylogo: require('./../assets/keylogo.jpg'),
+      lockLogo: require('./../assets/lockLogo.jpg'),
+      commaslogo: require('./../assets/commaslogo.png'),
     }
   }
 }
@@ -115,8 +122,27 @@ export default {
   <IntegrateText :integrateLogo="handfree" :integrateLogo1="arrowplain" :integrateLogo2="softwarelogo" :integrateLogo3="tick" />
   </div>
 
+   <div class="parentTextIcons">
+  <div class="mainTextandlogo">
+    <Textandlogo :keylogo="keylogo" bgColor4="#D6D9DC" keyText="Robust read and write API" />
+    <Textandlogo :keylogo="lockLogo" bgColor4="#D6D9DC" keyText="Single sign-on with AD or SAML" />
+    <Textandlogo :keylogo="leadershiplogo" bgColor4="#D6D9DC" keyText="Your own customer success representative" />
+    <Textandlogo :keylogo="handfree" bgColor4="#D6D9DC" keyText="99.5% uptime SLA and priority support" /> 
   </div>
+</div>
 
+
+
+<div class="commasclass">
+<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." />
+<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." />
+<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." />
+<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." />
+</div>
+
+
+
+  </div>
 
 
 </div>
@@ -150,7 +176,7 @@ export default {
   width: 93%;
   background-color: black;
   margin-top: 10px;
-  height: 2800px;
+  height: 2850px;
   border-radius: 10px;
 }
 .overflowCard{
@@ -232,5 +258,20 @@ export default {
 .integrateText{
   margin-top: 170px;
   text-align: center;
+}
+.parentTextIcons{
+  width: 73%;
+  margin-left: 213px;
+}
+.mainTextandlogo{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  justify-content: space-around;
+}
+.commasclass{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 120px;
 }
 </style>

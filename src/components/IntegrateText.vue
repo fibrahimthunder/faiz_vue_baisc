@@ -96,7 +96,7 @@ export default {
     margin-top: 30px;
 }
 .TextPremium{
-    margin-top: 180px;
+    margin-top: 130px;
     font-weight: 100;
     font-size: 20px;
     color: #2C3034;
