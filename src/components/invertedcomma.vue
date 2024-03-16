@@ -55,7 +55,7 @@ export default {
     background-color: black;
 }
 .subhidingCommaText{
-    margin-top: 7px;
+    margin-top: 5px;
     font-size: 20px;
 }
 .hidingCommaText{

@@ -9,6 +9,8 @@ import TextComponent from '../components/TextComponent.vue';
 import IntegrateText from '../components/IntegrateText.vue';
 import Textandlogo from '../components/Textandlogo.vue';
 import invertedcomma from '../components/invertedcomma.vue';
+import middleDashboard from '../components/middleDashboard.vue';
+import SmallMidCards from '../components/SmallMidCards.vue';
 
 export default {
   name: 'DashboardScreen',
@@ -22,7 +24,9 @@ export default {
     TextComponent,
     IntegrateText ,
     Textandlogo,
-    invertedcomma
+    invertedcomma,
+    middleDashboard,
+    SmallMidCards
   },
   data(){
     return{
@@ -38,6 +42,7 @@ export default {
       keylogo: require('./../assets/keylogo.jpg'),
       lockLogo: require('./../assets/lockLogo.jpg'),
       commaslogo: require('./../assets/commaslogo.png'),
+      stackoverflowicon: require('./../assets/stackoverflow_icon.png'),
     }
   }
 }
@@ -140,6 +145,21 @@ export default {
 <invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." hidingAftercomma="Software Engineer" subhidingAfterComma="Box" b_width="159px" />
 </div>
 
+<div>
+<middleDashboard :MiddleLogo="stackoverflowicon" middleText="stack" middleText1="overflow" />
+</div>
+
+
+<div class="MiddleText2">
+  <p>Additional products that reach and engage developers & technologists…</p>
+</div>
+
+
+
+<div class="SmallCardsComp">
+  <SmallMidCards :smallMidLogo="stackoverflowicon" SmallMidtext="ADVERTISING" bgColor5="grey" SmallMidtext1="Reach the world,s largest audience of developers and technologists" />
+  <SmallMidCards :smallMidLogo="stackoverflowicon" SmallMidtext="ADVERTISING" />
+</div>
 
 
   </div>
@@ -273,5 +293,17 @@ export default {
   display: flex;
   justify-content: space-around;
   margin-top: 120px;
+}
+.MiddleText2{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 35px;
+  width: 700px;
+  margin-left: 420px;
+}
+.SmallCardsComp{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 </style>
