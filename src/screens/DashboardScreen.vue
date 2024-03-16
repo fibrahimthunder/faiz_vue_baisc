@@ -134,10 +134,10 @@ export default {
 
 
 <div class="commasclass">
-<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." />
-<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." />
-<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." />
-<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." />
+<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." subhidingAfterComma="Microsoft" hidingAftercomma="Director of Product Management" b_width="283px" />
+<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." hidingAftercomma="Director of Engineering" subhidingAfterComma="Elastic Cloud" b_width="200px" />
+<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." hidingAftercomma="Engineering" subhidingAfterComma="Expensify" b_width="104px" />
+<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." hidingAftercomma="Software Engineer" subhidingAfterComma="Box" b_width="159px" />
 </div>
 
 
