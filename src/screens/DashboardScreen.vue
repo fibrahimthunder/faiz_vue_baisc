@@ -11,6 +11,8 @@ import Textandlogo from '../components/Textandlogo.vue';
 import invertedcomma from '../components/invertedcomma.vue';
 import middleDashboard from '../components/middleDashboard.vue';
 import SmallMidCards from '../components/SmallMidCards.vue';
+import BlueComponent from '../components/BlueComponent.vue';
+import lockTextBtn from '../components/lockTextBtn.vue';
 
 export default {
   name: 'DashboardScreen',
@@ -26,7 +28,9 @@ export default {
     Textandlogo,
     invertedcomma,
     middleDashboard,
-    SmallMidCards
+    SmallMidCards,
+    BlueComponent,
+    lockTextBtn
   },
   data(){
     return{
@@ -64,7 +68,7 @@ export default {
   
     <div class="overflowCard">
     <BigStackoverflow Text1="stackoverflow" />
-    
+
 
     <div class="TickCompParent">
     <div class="TickComponent">
@@ -114,10 +118,10 @@ export default {
 
    <div class="parentTextCom">
     <div class="MainTextComp">
-   <TextComponent maintext="A Forrester Consulting study shows 191% return on investment with Stack Overflow for Teams." bgColor3="#272B2E" />
+   <TextComponent maintext="A Forrester Consulting study shows 191% return on investment with Stack Overflow for."  bgColor3="#272B2E"  />
    <TextComponent maintext="The world’s largest telecom firm saved $10M in deflected support cases with our centralized knowledge base." bgColor3="#272B2E" />
    <TextComponent maintext="Subject-matter experts at software platform Unqork had 27% more time to work on projects after using Teams." bgColor3="#272B2E" />
-   <TextComponent maintext="you can save time and money with Stack Overflow for Teams" bgColor3="#272B2E" />
+   <TextComponent maintext="you can save time and money with Stack Overflow for Teams" bgColor3="#272B2E" dynmicbtn1="RECOMMENDED" />
     </div>
   </div>
 
@@ -140,9 +144,9 @@ export default {
 
 <div class="commasclass">
 <invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." subhidingAfterComma="Microsoft" hidingAftercomma="Director of Product Management" b_width="283px" />
-<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." hidingAftercomma="Director of Engineering" subhidingAfterComma="Elastic Cloud" b_width="200px" />
-<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." hidingAftercomma="Engineering" subhidingAfterComma="Expensify" b_width="104px" />
-<invertedcomma :Commalogo="commaslogo" CommaText="Stack Overflow for Teams has been a resource for our entire company. Not only for developers to solve problems, it’s also enabled our sales field to answer technical questions that help them close deals." hidingAftercomma="Software Engineer" subhidingAfterComma="Box" b_width="159px" />
+<invertedcomma :Commalogo="commaslogo" CommaText="Engineers should help solve the hardest questions, the unknowns, where being familiar with how the product was built is essential. But we don’t want to keep answering solved problems over and over again. That’s where Stack Overflow for Teams really helps." hidingAftercomma="Director of Engineering" subhidingAfterComma="Elastic Cloud" b_width="200px" />
+<invertedcomma :Commalogo="commaslogo" CommaText="As we started to use [Stack Overflow for Teams] and saw how nice it was to have a repository of information, we started to see it spread to other teams. Our customer support team started using it, our people success team started using it, next thing we knew, we had [Slack] integrations all over the place." hidingAftercomma="Engineering" subhidingAfterComma="Expensify" b_width="104px" />
+<invertedcomma :Commalogo="commaslogo" CommaText="What we love about Stack Overflow for Teams is that it’s a very dynamic tool…there’s just so many ways to use this as a liaison between different teams and different knowledge bases." hidingAftercomma="Software Engineer" subhidingAfterComma="Box" b_width="159px" />
 </div>
 
 <div>
@@ -155,12 +159,31 @@ export default {
 </div>
 
 
+<div class="MainSmallcards">
 
 <div class="SmallCardsComp">
-  <SmallMidCards :smallMidLogo="stackoverflowicon" SmallMidtext="ADVERTISING" bgColor5="grey" SmallMidtext1="Reach the world,s largest audience of developers and technologists" />
-  <SmallMidCards :smallMidLogo="stackoverflowicon" SmallMidtext="ADVERTISING" />
+  <SmallMidCards :smallMidLogo="stackoverflowicon" SmallMidtext="ADVERTISING" SmallMidtext1="Reach the world,s largest audience of developers and technologists" bgColor5="grey"/>
+  <SmallMidCards :smallMidLogo="stackoverflowicon" SmallMidtext="COLLECTIVES" SmallMidtext1="Connecting communities with the spacific technologies they use the most" bgColor5="grey"/> 
 </div>
 
+
+    <SmallMidCards :smallMidLogo="stackoverflowicon" SmallMidtext="ADVERTISING" SmallMidtext1="Reach the world,s largest audience of developers and technologists" bgColor5="grey"/>
+  
+
+</div>
+
+
+<div class="blueContainerDiv">
+<div class="blueComponent">
+  <BlueComponent blueText1="Stack" blueText2="Exchange" :blueComLogo="stackoverflowicon" blueText3="Explore technical topics and other disciplines across 170+ Q&A communities" blueText4="From Server Fault to Super User, much of the Stack Exchange network continues our mission to empower the world to develop technology through collective knowledge. Other sites on the Stack Exchange network further encourage knowledge sharing across topics such as cooking and medicine." />
+</div>
+</div>
+
+
+
+<div>
+  <lockTextBtn :locklogoes="lockLogo" textofLock="Build a private community to share technical or non-technical knowledge." />
+</div>
 
   </div>
 
@@ -193,16 +216,17 @@ export default {
   justify-content: center;
 }
 .overflowCard{
+  display: flex;
+  flex-direction: column;
   width: 93%;
+  align-items: center;
   background-color: black;
   margin-top: 10px;
   height: 2850px;
   border-radius: 10px;
-}
-.overflowCard{
   padding: 50px;
-  width: 85%;
 }
+
 .TickCompParent{
   justify-content: center ;
   display: flex;
@@ -265,9 +289,10 @@ export default {
   justify-content: space-around;
 }
 .parentTextCom{
-  width: 70%;
+  margin-left: 150px;
   justify-content: center;
-  margin-left: 200px;
+  width: 80%;
+  background-color: blue;
 }
 .MainTextComp{
   margin-top: 70px;
@@ -276,7 +301,7 @@ export default {
   justify-content: space-around;
 }
 .integrateText{
-  margin-top: 170px;
+  margin-top: 220px;
   text-align: center;
 }
 .parentTextIcons{
@@ -299,11 +324,28 @@ export default {
   margin-top: 30px;
   font-size: 35px;
   width: 700px;
-  margin-left: 420px;
+}
+.MainSmallcards{
+  display: flex;
+  flex-direction: column;
+  background-color: brown;
+  align-items: center;
+  width: 80%;
 }
 .SmallCardsComp{
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+
   margin-top: 50px;
+  background-color: blue;
+}
+
+.blueContainerDiv{
+  background-color: blue;
+  width: 100%;
+  height: 670px;
+  margin-top: 600px;
+  border-radius: 10px;
 }
 </style>

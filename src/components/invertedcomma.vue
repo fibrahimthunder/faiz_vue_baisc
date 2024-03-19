@@ -1,7 +1,7 @@
 <template>
     <div class="parentComma">
         <img class="logoComma" :src="Commalogo">
-        <p class="textofcomma">{{ CommaText }}</p>
+        <p class="textofcomma" >{{ CommaText }}</p>
 
         <div class="line" :style="{ width: b_width }">
         </div>

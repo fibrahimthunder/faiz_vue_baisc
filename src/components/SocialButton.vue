@@ -1,6 +1,6 @@
 <template>
   <div  >
-    <button id="Google-icon" :style="{ backgroundColor: bgColor, height: b_height, width: b_width, borderRadius: dynamicBorderRadius, marginTop: computedMarginTop }">
+    <button id="Google-icon" :style="{ backgroundColor: bgColor, height: b_height, width: b_width, borderRadius: dynamicBorderRadius, marginTop: computedMarginTop, borderColor: b_borderColor }">
       <div style="display: flex;
       flex-direction: row;">
         <img  id="Google-Logo" :src="logoPath" v-if="!!logoPath" />
@@ -51,6 +51,10 @@ export default {
     computedMarginTop:{
       type: String,
       default: ""
+    },
+    b_borderColor:{
+      type: String,
+      default: "",
     }
   },
 };

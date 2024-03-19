@@ -5,9 +5,7 @@
         <p class="MiddleText">{{ middleText }}</p>
         <p class="MiddleText1">{{ middleText1 }}</p>
     </div>
-
     
-
 </template>
 
 
