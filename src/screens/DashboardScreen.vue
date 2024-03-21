@@ -13,6 +13,9 @@ import middleDashboard from '../components/middleDashboard.vue';
 import SmallMidCards from '../components/SmallMidCards.vue';
 import BlueComponent from '../components/BlueComponent.vue';
 import lockTextBtn from '../components/lockTextBtn.vue';
+import btnAndcolortext from '../components/btnAndcolortext.vue'
+import BlackFooter from '../components/BlackFooter.vue';
+
 
 export default {
   name: 'DashboardScreen',
@@ -30,7 +33,9 @@ export default {
     middleDashboard,
     SmallMidCards,
     BlueComponent,
-    lockTextBtn
+    lockTextBtn,
+    btnAndcolortext,
+    BlackFooter
   },
   data(){
     return{
@@ -165,16 +170,15 @@ export default {
   <SmallMidCards :smallMidLogo="stackoverflowicon" SmallMidtext="ADVERTISING" SmallMidtext1="Reach the world,s largest audience of developers and technologists" bgColor5="grey"/>
   <SmallMidCards :smallMidLogo="stackoverflowicon" SmallMidtext="COLLECTIVES" SmallMidtext1="Connecting communities with the spacific technologies they use the most" bgColor5="grey"/> 
 </div>
-
-
     <SmallMidCards :smallMidLogo="stackoverflowicon" SmallMidtext="ADVERTISING" SmallMidtext1="Reach the world,s largest audience of developers and technologists" bgColor5="grey"/>
-  
-
 </div>
 
 
+<btnAndcolortext />
+
+
 <div class="blueContainerDiv">
-<div class="blueComponent">
+<div class="mainblueComponent">
   <BlueComponent blueText1="Stack" blueText2="Exchange" :blueComLogo="stackoverflowicon" blueText3="Explore technical topics and other disciplines across 170+ Q&A communities" blueText4="From Server Fault to Super User, much of the Stack Exchange network continues our mission to empower the world to develop technology through collective knowledge. Other sites on the Stack Exchange network further encourage knowledge sharing across topics such as cooking and medicine." />
 </div>
 </div>
@@ -184,6 +188,12 @@ export default {
 <div>
   <lockTextBtn :locklogoes="lockLogo" textofLock="Build a private community to share technical or non-technical knowledge." />
 </div>
+
+
+<div class="mainBlackCon">
+<BlackFooter :BlackComLogo="stackoverflowicon" />
+</div>
+
 
   </div>
 
@@ -235,7 +245,6 @@ export default {
   margin-top: 90px;
   display: flex;
   justify-content: space-around;
-  width: 65%;
 }
 .insideComp{
   background-color: rgb(100, 97, 97);
@@ -250,7 +259,6 @@ export default {
   margin-top: 90px;
 }
 .hr-line{
-  width: 40%;
   color: rgb(100, 97, 97);
 }
 .part2Text{
@@ -282,17 +290,15 @@ export default {
 }
 .sixComp{
   margin-top: 150px;
-  margin-left: 15px;
 }
 .fordisplaycards{
   display: flex;
   justify-content: space-around;
+  width: 95%;
 }
 .parentTextCom{
-  margin-left: 150px;
-  justify-content: center;
   width: 80%;
-  background-color: blue;
+  
 }
 .MainTextComp{
   margin-top: 70px;
@@ -306,7 +312,6 @@ export default {
 }
 .parentTextIcons{
   width: 73%;
-  margin-left: 213px;
 }
 .mainTextandlogo{
   display: flex;
@@ -318,6 +323,7 @@ export default {
   display: flex;
   justify-content: space-around;
   margin-top: 120px;
+  width: 90%;
 }
 .MiddleText2{
   text-align: center;
@@ -328,7 +334,6 @@ export default {
 .MainSmallcards{
   display: flex;
   flex-direction: column;
-  background-color: brown;
   align-items: center;
   width: 80%;
 }
@@ -336,16 +341,26 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-
   margin-top: 50px;
-  background-color: blue;
 }
 
 .blueContainerDiv{
   background-color: blue;
   width: 100%;
-  height: 670px;
-  margin-top: 600px;
+  height: 680px;
+  margin-top: 90px;
   border-radius: 10px;
+}
+.mainblueComponent{
+  display: flex;
+  justify-content: center;
+}
+.mainBlackCon{
+  
+  color: #b1b2b3;
+  background-color: #000000;
+  height: 500px;
+  width: 1759px;
+  margin-top: 70px;
 }
 </style>

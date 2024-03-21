@@ -6,12 +6,9 @@
         <p class="BlueText2">{{ blueText2 }}</p>
         <img class="BlueComLogo" :src="blueComLogo">
     </div>
-
     <p class="BlueText3">{{ blueText3 }}</p>
-
     <p class="BlueText4"> {{ blueText4 }}</p>
      
-
     <div class="BlueComBtn">
     <SocialButton dynamicBorderRadius="7px" text="Explore the network"  textColor="black" bgColor="#F1AB00"  b_width="208px" b_height="45px"/>
     </div>
@@ -87,18 +84,20 @@ components:{
     font-size: 40px;    
     font-weight: bold;
     width: 715px;
-    margin-left: 460px;
+    
 }
 .BlueText4{
     color: white;
     text-align: center;
     width: 540px;
-    margin-left: 560px;
     margin-top: 40px;
+    margin-left: 90px;
 }
 .BlueComBtn{
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    margin-bottom: 90px;
 }
+
 </style>

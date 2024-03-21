@@ -69,7 +69,6 @@ export default {
 .mainSecondHidingText{
     width: 800px;
     text-align: center;
-    margin-left: 345px;
     padding: 3px;
 }
 .IntegrateLogoes{
