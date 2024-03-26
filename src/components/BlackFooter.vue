@@ -1,177 +1,140 @@
 <template>
+  <div class="footer">
+    <div class="BLack-container">
+      <div class="row">
+        <div style="display: flex; flex-direction: row;">
+        <img class="FooterLogo" :src="footerLogo" />
+        <div class="footer-col">
+          <ul>
+            <p style="font-weight: bold">Stackoverflow</p>
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="footer-col">
+          <ul>
+            <p style="font-weight: bold">Products</p>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">advertising</a></li>
+            <li><a href="#">collectives</a></li>
+            <li><a href="#">Talent</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <ul>
+            <p style="font-weight: bold">Company</p>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Work Here</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Teams of service</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Cookie Settings</a></li>
+            <li><a href="#">Cookie policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <p style="font-weight: bold">STACK EXCHANGE NETWORK</p>
+          <ul>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Culture & recreation</a></li>
+            <li><a href="#">Life and arts</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Professional</a></li>
+            <li><a href="#">Bussines</a></li>
+            <li><a href="#">Api</a></li>
+            <li><a href="#">Data</a></li>
+          </ul>
+        </div>
+
+        
+          <div class="mainFooter">
+          <ul class="fiveMainblogs">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Linkdin</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+          <p style="width: 472px;">Site design / logo © 2024 Stack Exchange Inc; user contributions licensed under CC BY-SA. rev 2024.3.22.6753</p>
+        
+      </div>
 
 
-    <div class="mianAllText">
-        <img class="blackComLogo" :src="BlackComLogo">
-    <div class="logoAndtxtdiv">
-
-
-    <div>
-    <p class="TextStack">STACK OVERFLOW</p>
-    <p class="textofquestion">Question</p>
-    <p class="textofhelp">help</p>
+      </div>
     </div>
-    </div>
-
-    <div>
-        <p class="TextProduct">PRODUCTS</p>
-        <p class="textofTeams">Teams</p>
-        <p class="textifadvertising">Advertising</p>
-        <p class="textofcollections">Collectives</p>
-        <p class="textoftalent">Talent</p>
-    </div>
-
-
-
-    <div>
-        <p class="TextCompany">COMPANY</p>
-        <p class="textofabout">About</p>
-        <p class="textofpress">Press</p>
-        <p class="textofwork">Work Here</p>
-        <p class="textoflegal">Legal</p>
-        <p class="textofpolicy">Privacy Policy</p>
-        <p class="textofservice">Teams of service</p>
-        <p class="textofcontact">Contact Us</p>
-        <p class="textofCookie">Cookie Settings</p>
-        <p class="textofCp">Cookie Policy</p>        
-    </div>
-
-    <div>
-        <p class="textofExhange">STACK EXCHANGE NETWORK</p>
-        <p class="textoftech">Technology</p>
-        <p class="textofculure">Culture & recreation</p>
-        <p class="textoflife">Life & arts</p>
-        <p class="textofSer">Science</p>
-        <p class="textofprofession">professional</p>
-        <p class="textofbussines">Bussines</p>
-        <p class="textofApi" >Api</p>
-        <p class="textofdata" >data</p>
-    </div>
-
-</div>
-
+  </div>
 </template>
-
 
 <script>
 export default {
-  name: 'BlackFooter',
+  name: "BlackFooter",
 
-
-  props:{
-    BlackComLogo:{
-        type: String,
-        required: true,
-    }
-  }
+  props: {
+    BlackComLogo: {
+      type: String,
+      required: true,
+    },
+    footerLogo: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>
 
-
 <style>
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.mianAllText{
-    display: flex;
-    margin-top: 30px;
-    justify-content: space-around;
-    width: 70%;
-    margin-bottom: 50px;
+.footer {
+  margin-top: 20px;
 }
-.blackComLogo{
-    height: 35px;
-    width: 40px;
-    margin-left: 180px;
+.FooterLogo {
+  height: 30px;
+  width: 40px;
+  margin-right: 40px;
 }
-.TextStack{
-   font-weight: bold;    
+ul {
+  list-style: none;
 }
-.TextProduct{
-    font-weight: bold;
+.BLack-container {
+  display: flex;
+  justify-content: center;
 }
-.textofExhange{
-    font-weight: bold;
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
 }
-.TextCompany{
-    font-weight: bold;
+.fiveMainblogs {
+  display: flex;
+  flex-direction: row;
+  
 }
-.logoAndtxtdiv{
-    display: flex;
-    margin-left: 30px;
+.footer-col p {
+  margin-bottom: 20px;
 }
-.textofquestion{
-    margin-top: 20px;
+.footer-col ul li a {
+  text-decoration: none;
+  color: #767979;
 }
-.textofhelp{
-    margin-top: 10px;
+.footer-col ul li {
+  margin-bottom: 10px;
 }
-.textofTeams{
-    margin-top: 20px;
-}
-.textifadvertising{
-    margin-top: 10px;
-}
-.textofcollections{
-    margin-top: 10px;
-}
-.textoftalent{
-    margin-top: 10px;
-}
-.textofabout{
-    margin-top: 20px;
-}
-.textofpress{
-    margin-top: 10px;
-}
-.textofwork{
-    margin-top: 10px;
-}
-.textoflegal{
-    margin-top: 10px;
-}
-.textofpolicy{
-    margin-top: 10px;
-}
-.textofservice{
-    margin-top: 10px;
-}
-.textofcontact{
-    margin-top: 10px;
-}
-.textofCookie{
-    margin-top: 10px;
-}
-.textofCp{
-    margin-top: 10px;
-}
-.textoftech{
-    margin-top: 20px;
-}
-.textofculure{
-    margin-top: 10px;
-}
-.textoflife{
-    margin-top: 10px;
-}
-.textofSer{
-    margin-top: 10px;
-}
-.textofprofession{
-    margin-top: 10px;
-}
-.textofprofession{
-    margin-top: 10px;
-}
-.textofbussines{
-    margin-top: 10px;
-}
-.textofApi{
-    margin-top: 10px;
-}
-.textofdata{
-    margin-top: 10px;
+.mainFooter{
+  display: flex;
+  flex-direction: column;
+  height: 265px;
+  justify-content: space-between;
 }
 </style>
