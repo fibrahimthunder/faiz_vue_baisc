@@ -1,6 +1,6 @@
 <template>
-    <div class="black-container1">
-        <div class="row2">
+        <div class="black-container1">
+            <div class="row2">
             <div style="display: flex; flex-direction: row;">
                 <img class="FooterLogo2" v-if="footerLogo2" :src="footerLogo2" />
                 <div class="footer-col2">
@@ -20,6 +20,7 @@
                 </div>
               </div>
         </div>
+
 
     </div>
 </template>
@@ -83,14 +84,19 @@ export default {
 };
 </script>
 
-
 <style>
 .FooterLogo2{
     height: 30px;
-  width: 40px;
+    width: 40px;
+    margin-bottom: 50px;
 }
 .black-container1{
-    margin-top: 20px;
+    height: 340px;
+    margin-top: 30px;
+    width: 20%
+}
+.footer-col2{
+    margin-left: 50px;
 }
 .footer-col2 ul li a {
     text-decoration: none;
@@ -101,5 +107,6 @@ export default {
 }
 ul{
     list-style: none;
-}
+}       
+
 </style>

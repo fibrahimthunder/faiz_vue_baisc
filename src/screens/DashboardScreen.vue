@@ -421,7 +421,7 @@ export default {
         />
       </div>
 
-      
+      <div class="parent-BlackCon">
       <div class="mainBlackCon">
         <contentBlackfooter
           :footerLogo2="stackoverflowicon"
@@ -459,7 +459,8 @@ export default {
           TextFooter7="Api"
           TextFooter8="Data"
         />
-        <contentBlackfooter
+      <div style="display: flex; flex-direction: row;">
+        <contentBlackfooter 
           TextFooter1="Blog"
           TextFooter2="Facebook"
           TextFooter3="Twitter"
@@ -467,6 +468,10 @@ export default {
           TextFooter5="Inatagram"
         />
       </div>
+    </div>
+
+      </div>
+
     </div>
   </div>
 </template>
@@ -612,7 +617,6 @@ export default {
   align-items: center;
   margin-top: 50px;
 }
-
 .blueContainerDiv {
   background-color: blue;
   width: 100%;
@@ -624,13 +628,19 @@ export default {
   display: flex;
   justify-content: center;
 }
-.mainBlackCon {
-  color: #b1b2b3;
-  background-color: hsl(0, 0%, 0%);
+.parent-BlackCon{
   margin-top: 70px;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   width: 100%;
-  justify-content: space-between;
+  background-color: hsl(0, 0%, 0%); 
+}
+.mainBlackCon{
+  color: #b1b2b3;
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin-right: 10px;
+  justify-content: space-around;
 }
 </style>
