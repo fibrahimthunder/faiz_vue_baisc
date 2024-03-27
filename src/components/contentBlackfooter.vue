@@ -1,5 +1,4 @@
 <template>
-        <div class="black-container1">
             <div class="row2">
             <div style="display: flex; flex-direction: row;">
                 <img class="FooterLogo2" v-if="footerLogo2" :src="footerLogo2" />
@@ -19,7 +18,6 @@
                   </ul>
                 </div>
               </div>
-        </div>
 
 
     </div>
@@ -90,11 +88,7 @@ export default {
     width: 40px;
     margin-bottom: 50px;
 }
-.black-container1{
-    height: 340px;
-    margin-top: 30px;
-    width: 20%
-}
+
 .footer-col2{
     margin-left: 50px;
 }
@@ -107,6 +101,7 @@ export default {
 }
 ul{
     list-style: none;
+    
 }       
 
 </style>

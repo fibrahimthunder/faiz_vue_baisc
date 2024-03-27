@@ -16,6 +16,7 @@ import lockTextBtn from "../components/lockTextBtn.vue";
 import btnAndcolortext from "../components/btnAndcolortext.vue";
 import BlackFooter from "../components/BlackFooter.vue";
 import contentBlackfooter from "../components/contentBlackfooter.vue";
+import InsideComFooter from "../components/InsideComFooter.vue";
 
 export default {
   name: "DashboardScreen",
@@ -37,6 +38,7 @@ export default {
     btnAndcolortext,
     BlackFooter,
     contentBlackfooter,
+    InsideComFooter
   },
   data() {
     return {
@@ -459,18 +461,16 @@ export default {
           TextFooter7="Api"
           TextFooter8="Data"
         />
-      <div style="display: flex; flex-direction: row;">
-        <contentBlackfooter 
-          TextFooter1="Blog"
-          TextFooter2="Facebook"
-          TextFooter3="Twitter"
-          TextFooter4="Linkdin"
-          TextFooter5="Inatagram"
-        />
-      </div>
-    </div>
+
+        <div class="parentInsideCom">
+          <InsideComFooter insidetext1="Blog" insidetext2="Facebook" insidetext3="Twitter" insidetext4="Linkdin" insidetext5="Instagram" />
+        </div>
 
       </div>
+
+
+    </div>
+
 
     </div>
   </div>
@@ -642,5 +642,7 @@ export default {
   width: 85%;
   margin-right: 10px;
   justify-content: space-around;
+  margin-top: 30px;
+  height: 340px;
 }
 </style>
