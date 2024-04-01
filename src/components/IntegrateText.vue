@@ -97,4 +97,7 @@ export default {
     font-size: 20px;
     color: #2C3034;
 }
+.logesIntigrate{
+  margin-top: 30px;
+}
 </style>

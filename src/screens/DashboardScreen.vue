@@ -513,7 +513,7 @@ export default {
   align-items: center;
   background-color: black;
   margin-top: 100px;
-  height: 2850px;
+  height: 2900px;
   border-radius: 10px;
   
 }
@@ -596,7 +596,7 @@ export default {
 .mainTextandlogo {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
   justify-content: space-around;
 }
 .commasclass {
