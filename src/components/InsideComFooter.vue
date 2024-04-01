@@ -59,7 +59,7 @@ export default {
 }
 .footerPara{
     width: 345px;
-    margin-left: 11%;
+    margin-left: 13%;
     margin-top: 211px;
     font-size: 13px;
     color:   rgb(101, 100, 100);

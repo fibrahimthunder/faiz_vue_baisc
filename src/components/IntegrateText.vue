@@ -91,9 +91,6 @@ export default {
     width: 70px;
     border-radius: 8px;
 }
-.logesIntigrate{
-    margin-top: 30px;
-}
 .TextPremium{
     margin-top: 130px;
     font-weight: 100;

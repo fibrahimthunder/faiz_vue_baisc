@@ -76,12 +76,11 @@ export default {
         bgColor="rgb(62, 62, 237)"
         :logoPath="searchbarIcon"
       />
-      <Spacialcard
-        class="card-2"
-        heading="Want a secure, private space for your technical knowledge?"
-        bgColor="rgb(62, 62, 237)"
-        :logoPath="searchbarIcon"
-      />
+    </div>
+
+    <div class="afterCardPara">
+      <p>Every developer data scientist system adminmobile developer game developer has a
+        tab open to Stack Overflow</p>
     </div>
 
     <div class="maincards">
@@ -487,12 +486,19 @@ export default {
   align-items: center;
 }
 .Fahad {
-  width: 100%;
+  width: 42%;
   display: flex;
   flex-direction: row;
   justify-content: "center";
   align-items: center;
-  background-color: chartreuse;
+}
+.afterCardPara{
+  margin-top: 90px;
+  font-weight: bold;
+  font-size: 40px;
+  width: 800px;
+  text-align: center;
+  margin-bottom: 90px;
 }
 
 .maincards {
@@ -569,7 +575,7 @@ export default {
 .fordisplaycards {
   display: flex;
   justify-content: space-around;
-  width: 95%;
+  width: 88%;
 }
 .parentTextCom {
   width: 80%;
@@ -585,7 +591,7 @@ export default {
   text-align: center;
 }
 .parentTextIcons {
-  width: 73%;
+  width: 63%;
 }
 .mainTextandlogo {
   display: flex;
