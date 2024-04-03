@@ -17,6 +17,8 @@ import btnAndcolortext from "../components/btnAndcolortext.vue";
 import BlackFooter from "../components/BlackFooter.vue";
 import contentBlackfooter from "../components/contentBlackfooter.vue";
 import InsideComFooter from "../components/InsideComFooter.vue";
+import SocialButton from "../components/SocialButton.vue";
+import sixComponent from "../components/sixComponent.vue";
 
 export default {
   name: "DashboardScreen",
@@ -38,7 +40,8 @@ export default {
     btnAndcolortext,
     BlackFooter,
     contentBlackfooter,
-    InsideComFooter
+    InsideComFooter,
+    sixComponent
   },
   data() {
     return {
@@ -58,6 +61,7 @@ export default {
     };
   },
 };
+
 </script>
 
 <template>
@@ -102,6 +106,10 @@ export default {
         cardtext3="A web-based platform to increase productivity, decrease cycle times, accelerate time to market, and protect institutional knowledge."
         cardtext5="---------Get started---------"
       />
+    </div>
+
+    <div class="organizationText">
+      <p>Thousands of organizations around the globe use Stack Overflow for Teams</p>
     </div>
 
     <div class="overflowCard">
@@ -174,7 +182,7 @@ export default {
       </div>
 
       <div class="sixComp">
-        <p style="color: white">Annual billing discount</p>
+        <sixComponent />
       </div>
 
       <div class="fordisplaycards">
@@ -499,11 +507,12 @@ export default {
   width: 800px;
   text-align: center;
   margin-bottom: 90px;
+  color: rgb(102, 99, 99);
 }
 
 .maincards {
   display: flex;
-  width: 80%;
+  width: 68%;
   justify-content: center;
 }
 .overflowCard {
@@ -517,7 +526,11 @@ export default {
   border-radius: 10px;
   
 }
-
+.organizationText{
+  color: rgb(116, 105, 105);
+  margin-top: 150px;
+  font-size: 22px;
+}
 .TickCompParent {
   justify-content: center;
   display: flex;
@@ -571,6 +584,7 @@ export default {
 }
 .sixComp {
   margin-top: 150px;
+  margin-right: 1340px;
 }
 .fordisplaycards {
   display: flex;
@@ -615,7 +629,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+
 }
 .SmallCardsComp {
   display: flex;
